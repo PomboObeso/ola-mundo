@@ -1,10 +1,13 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Inicio } from './pages/Inicio';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Olá mundo!</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Inicio/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
